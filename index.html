@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Giving favicon image for form  -->
+    <link rel="shortcut icon" href="resume-fevicon.png" type="image/x-icon">
+    <!-- Linking css predifined files -->
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Linking external css files -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Linking JS Query and Bootstrap JS files -->
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+
+    <!-- Giving title for form  -->
+    <title>Survey Form</title>
+
+</head>
+
+
+<!-- including container for bootstrap -->
+<body class="container">
+    <form class ="border-class" style="border:1px solid black ; padding:10px">
+        <div class="form-group">
+            <label for="name" class="control-label">Name</label>
+            <div class="form-row">
+                <!-- including "col-xs-3" to resize the First name input box -->
+                <div class="col-xs-3">
+                    <input type="text" class="form-control" id="fname" aria-describedby="fname">
+                    <small id="fname" class="form-text text-muted">First name</small>
+                </div>
+                <!-- including "col-xs-3" to resize the Last name input box -->
+                <div class="col-xs-3">
+                    <input type="text" class="form-control" id="lname" aria-describedby="lname">
+                    <small id="lname" class="form-text text-muted">Last name</small>
+                </div>
+            </div>
+        </div>
+        <!-- Getting email information -->
+        <div class="form-group">
+            <label for="email" class="control-label ">Email address</label>
+            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+        </div>
+        <!-- Star Experience -->
+        <div class="control-label">
+            Your Experience:
+        </div>
+        <div >
+            <span class="fa fa-star checked "></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+        </div>
+        <div >
+            Overall how you would like to rate your experience with us ?
+            <div class="control-label">
+                <strong>How satisfied are you with</strong>
+            </div>
+
+             <!-- Table for user satisfaction -->
+            <div>
+               <!-- using table striped for alternate table row colors -->
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th scope="col">Very Unsatisfied</th>
+                            <th scope="col">Unsatisfied</th>
+                            <th scope="col">Neutral</th>
+                            <th scope="col">Satisfied</th>
+                            <th scope="col">Very Satisfied</th>
+                        </tr>   
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td scope="row">Purchase</td>
+                            <td><input class="form-check-input" type="radio" name="Purchase" id="purchaseRadio1"></td>
+                            <td><input class="form-check-input" type="radio" name="Purchase" id="purchaseRadio2"></td>
+                            <td><input class="form-check-input" type="radio" name="Purchase" id="purchaseRadio3"></td>
+                            <td><input class="form-check-input" type="radio" name="Purchase" id="purchaseRadio4"></td>
+                            <td><input class="form-check-input" type="radio" name="Purchase" id="purchaseRadio5"></td>
+                        </tr>
+                        <tr>
+                            <td scope="row">Service</td>
+                            <td><input class="form-check-input" type="radio" name="Service" id="serviceRadio1"></td>
+                            <td><input class="form-check-input" type="radio" name="Service" id="serviceRadio2"></td>
+                            <td><input class="form-check-input" type="radio" name="Service" id="serviceRadio3"></td>
+                            <td><input class="form-check-input" type="radio" name="Service" id="serviceRadio4"></td>
+                            <td><input class="form-check-input" type="radio" name="Service" id="serviceRadio5"></td>
+                        </tr>
+                        <tr>
+                            <td scope="row">Company Overall</td>
+                            <td><input class="form-check-input" type="radio" name="Company" id="companyRadio1"></td>
+                            <td><input class="form-check-input" type="radio" name="Company" id="companyRadio2"></td>
+                            <td><input class="form-check-input" type="radio" name="Company" id="companyRadio3"></td>
+                            <td><input class="form-check-input" type="radio" name="Company" id="companyRadio4"></td>
+                            <td><input class="form-check-input" type="radio" name="Company" id="companyRadio5"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="control-label">
+            <strong>How likely are you to</strong>
+        </div>
+
+        <!-- Table for user recommendation -->
+        <div>
+            <!-- using table striped for alternate table row colors -->
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th scope="col">Very Unsatisfied</th>
+                        <th scope="col">Unsatisfied</th>
+                        <th scope="col">Neutral</th>
+                        <th scope="col">Satisfied</th>
+                        <th scope="col">Very Satisfied</th>
+                    </tr>   
+                </thead>
+                <tbody>
+                    <tr>
+                        <td scope="row">Buy from us again</td>
+                        <td><input class="form-check-input" type="radio" name="buy" id="buyRadio1"></td>
+                        <td><input class="form-check-input" type="radio" name="buy" id="buyRadio2"></td>
+                        <td><input class="form-check-input" type="radio" name="buy" id="buyRadio3"></td>
+                        <td><input class="form-check-input" type="radio" name="buy" id="buyRadio4"></td>
+                        <td><input class="form-check-input" type="radio" name="buy" id="buyRadio5"></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">Recommend our products</td>
+                        <td><input class="form-check-input" type="radio" name="rProduct" id="rProductRadio1"></td>
+                        <td><input class="form-check-input" type="radio" name="rProduct" id="rProductRadio2"></td>
+                        <td><input class="form-check-input" type="radio" name="rProduct" id="rProductRadio3"></td>
+                        <td><input class="form-check-input" type="radio" name="rProduct" id="rProductRadio4"></td>
+                        <td><input class="form-check-input" type="radio" name="rProduct" id="rProductRadio5"></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">Recommend our company</td>
+                        <td><input class="form-check-input" type="radio" name="rCompany" id="rcompanyRadio1"></td>
+                        <td><input class="form-check-input" type="radio" name="rCompany" id="rcompanyRadio2"></td>
+                        <td><input class="form-check-input" type="radio" name="rCompany" id="rcompanyRadio3"></td>
+                        <td><input class="form-check-input" type="radio" name="rCompany" id="rcompanyRadio4"></td>
+                        <td><input class="form-check-input" type="radio" name="rCompany" id="rcompanyRadio5"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- Getting comments from user using text area  -->
+        <div class="form-group">
+            <label for="comments">Additional Comments or Suggestions</label>
+            <textarea class="form-control" id="comments" rows="3"></textarea>
+          </div>
+          <!-- Submit button  -->
+          <button class="btn btn-primary" type="submit">Submit</button>
+    </form>
+</body>
+</html>
